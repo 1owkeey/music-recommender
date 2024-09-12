@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Tracks for Track ID: {{ track_id }}</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <table border="1">
+            <tr>
+                <th>Track Name</th>
+                <th>Artist</th>
+                <th>Album</th>
+            </tr>
+            {% for track in recommendations.itertuples() %}
+            <tr>
+                <td>{{ track.track_name }}</td>
+                <td>{{ track.artist }}</td>
+                <td>{{ track.album }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    <a href="/">Go back</a>
+</body>
+</html>

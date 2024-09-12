@@ -1,0 +1,5 @@
+track_name,artist,album,release_date,track_id,tempo,spectral_centroid,spectral_bandwidth,spectral_rolloff,zero_crossing_rate,chroma_stft
+Fall Back,Lithe,Fall Back / Selfish Game,2024-03-22,1aHy1ipWQRNauI0ee9uYfi,0.34693877551020424,0.0,0.0,0.0,0.0,0.5953541898795285
+Ghost Town,Benson Boone,Fireworks & Rollerblades,2024-04-05,6HuHyXviAdpmnQu73JHfBz,0.22077922077922096,0.38429791601578134,0.8701152178332863,0.5485060774484063,0.03090555197150391,0.9999999999999991
+In The Stars,Benson Boone,Fireworks & Rollerblades,2024-04-05,315aBOUD3xtj7sUMXtRgMV,1.0,0.6004339829722949,1.0,0.6949150278967033,0.5491152906665774,0.01743374753710558
+Beautiful Things,Benson Boone,Fireworks & Rollerblades,2024-04-05,3xkHsmpQCBMytMJNiDf3Ii,0.0,1.0,0.997756925922916,1.0,0.9999999999999999,0.0
