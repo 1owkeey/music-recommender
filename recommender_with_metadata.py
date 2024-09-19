@@ -16,8 +16,16 @@ def recommend_similar_tracks_with_metadata(track_id, n=5):
     # Get the similarity scores for the given track_id
     similarity_scores = similarity_df[track_id]
     
+    # Debug: Print the similarity scores for the given track ID
+    print(f"Similarity scores for {track_id}:")
+    print(similarity_scores)
+    
     # Sort the scores in descending order and exclude the track itself (similarity = 1.0)
     similar_tracks = similarity_scores.sort_values(ascending=False).drop(track_id)
+    
+    # Debug: Print the top n most similar tracks
+    print(f"Top {n} similar tracks for {track_id}:")
+    print(similar_tracks.head(n))
     
     # Get the top n most similar tracks
     top_n_similar_tracks = similar_tracks.head(n).index.tolist()

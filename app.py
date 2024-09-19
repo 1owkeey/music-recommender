@@ -37,6 +37,12 @@ def home():
 def recommend():
     track_id = request.form['track_id'].strip().lower()  # Get the track ID from the form and convert to lowercase
     
+    # Debug: Print the submitted Track ID
+    print(f"Received Track ID: {track_id}")
+    
+    # Debug: Print all track IDs from the dataset
+    print(f"All track IDs in dataset: {similarity_df.index.tolist()}")
+    
     # Handle empty input
     if not track_id:
         return render_template('recommend.html', error="Please provide a valid Track ID.")
